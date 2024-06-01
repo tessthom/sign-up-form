@@ -39,67 +39,82 @@
             </span>
             <h1>TESS</h1>
           </div>
-          <small><a href="https://tessthomas.com">Tess Thomas</a> &copy; <span class="year">2024</span></small>
+          <small
+            ><a href="https://tessthomas.com">Tess Thomas</a> &copy;
+            <span class="year">2024</span></small
+          >
         </div>
       </header>
 
       <main>
-        <div class="|">
-          <div class="intro">
-            <p>
-              This is not a real online service! You know you need something like
-              this in your life to help you realize your deepest dreams. Sign up
-              <em>now</em> to get started.
-            </p>
-            <p>You <em>know</em> you want to.</p>
-          </div>
-          <div class="form-wrapper">
-            <form action="" method="POST">
-              <div class="form-inner-wrapper">
-                <p>
+        <div class="intro lg-text">
+          <p class="bold">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started.
+          </p>
+          <p class="bold">You <em>know</em> you want to.</p>
+        </div>
+
+        <div class="form-wrapper">
+          <form action="" method="POST">
+            <div class="form-inner-wrapper">
+              <div class="form-content-wrapper">
+                <p class="lg-text bold">
                   Let's do this!
                 </p>
+
                 <div class="form-row">
-                  <label for="first_name">First Name</label>
-                  <input id="first_name" name="first_name" type="text" />
-                  <label for="last_name">Last Name</label>
-                  <input id="last_name" name="last_name" type="text" />
+                  <div class="col">
+                    <label for="first_name">First Name</label>
+                    <input id="first_name" name="first_name" type="text" />
+                  </div>
+                  <div class="col">
+                    <label for="last_name">Last Name</label>
+                    <input id="last_name" name="last_name" type="text" />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" />
+                  </div>
+                  <div class="col">
+                    <label for="phone">Phone Number</label>
+                    <input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    />
+                  </div>
                 </div>
                 <div class="form-row">
-                  <label for="email">Email</label>
-                  <input id="email" name="email" type="email" />
-                  <label for="phone">Phone Number</label>
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                  />
-                </div>
-                <div class="form-row">
-                  <label for="password">Password</label>
-                  <input
-                    id="password"
-                    name="password"
-                    type="password"
-                    required />
-                  <label for="password_confirm">Confirm Password</label>
-                  <input
-                    id="password_confirm"
-                    name="password_confirm"
-                    type="password"
-                    required
-                  />
+                  <div class="col">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" required />
+                  </div>
+                  <div class="col">
+                    <label for="password_confirm">Confirm Password</label>
+                    <input
+                      id="password_confirm"
+                      name="password_confirm"
+                      type="password"
+                      required
+                    />
+                  </div>
                 </div>
               </div>
-              <button type="submit">Create Account</button>
-            </form>
-            <div class="login-wrapper">
-              <p>
-                Already have an account?
-                <a href="#">Log in</a>
-              </p>
             </div>
+            <button class="submit bold" type="submit">Create Account</button>
+          </form>
+
+          <div class="login-wrapper">
+            <p>
+              Already have an account?
+              <a class="bold login" href="#">Log in</a>
+            </p>
           </div>
         </div>
       </main>
