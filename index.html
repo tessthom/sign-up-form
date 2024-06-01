@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="body-container">
+      <header>
+        <div class="header-bg-img">
+          <div class="heading-overlay">
+            <span class="logo">
+              <svg
+                class="logo"
+                width="120"
+                height="93"
+                viewBox="0 0 120 93"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- the Ts -->
+                <path
+                  d="M15 1H84.4068M49.7034 1.77119V78.5M106 92H36.5932M71.2966 91.2288V15.6782"
+                  stroke="white"
+                />
+                <!-- right > bracket -->
+                <path
+                  d="M119.106 47L119.458 47.3554L119.815 47.0019L119.459 46.6464L119.106 47ZM87.6483 77.425L87.2929 77.7767L87.9963 78.4875L88.3517 78.1358L87.6483 77.425ZM87.7523 16.3536L118.752 47.3536L119.459 46.6464L88.4594 15.6464L87.7523 16.3536ZM88.3517 78.1358L119.458 47.3554L118.754 46.6446L87.6483 77.425L88.3517 78.1358Z"
+                  fill="white"
+                />
+                <!-- left < bracket -->
+                <path
+                  d="M1.00002 47L0.648325 47.3554L0.291044 47.0019L0.646461 46.6464L1.00002 47ZM32.4575 77.425L32.8129 77.7767L32.1096 78.4875L31.7541 78.1358L32.4575 77.425ZM32.3536 16.3536L1.35357 47.3536L0.646461 46.6464L31.6465 15.6464L32.3536 16.3536ZM31.7541 78.1358L0.648325 47.3554L1.35171 46.6446L32.4575 77.425L31.7541 78.1358Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
+            <h1>TESS</h1>
+          </div>
+          <small><a href="https://tessthomas.com">Tess Thomas</a> &copy; <span class="year">2024</span></small>
+        </div>
+      </header>
+
+      <main>
+        <div class="|">
+          <div class="intro">
+            <p>
+              This is not a real online service! You know you need something like
+              this in your life to help you realize your deepest dreams. Sign up
+              <em>now</em> to get started.
+            </p>
+            <p>You <em>know</em> you want to.</p>
+          </div>
+          <div class="form-wrapper">
+            <form action="" method="POST">
+              <div class="form-inner-wrapper">
+                <p>
+                  Let's do this!
+                </p>
+                <div class="form-row">
+                  <label for="first_name">First Name</label>
+                  <input id="first_name" name="first_name" type="text" />
+                  <label for="last_name">Last Name</label>
+                  <input id="last_name" name="last_name" type="text" />
+                </div>
+                <div class="form-row">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" />
+                  <label for="phone">Phone Number</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="password">Password</label>
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    required />
+                  <label for="password_confirm">Confirm Password</label>
+                  <input
+                    id="password_confirm"
+                    name="password_confirm"
+                    type="password"
+                    required
+                  />
+                </div>
+              </div>
+              <button type="submit">Create Account</button>
+            </form>
+            <div class="login-wrapper">
+              <p>
+                Already have an account?
+                <a href="#">Log in</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
