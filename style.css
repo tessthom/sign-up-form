@@ -35,6 +35,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --ocean-white: #f8f7fc;
   --ocean-mid-blue: #2F5370;
   --ocean-dark: hsl(208, 38%, 8%);
+  --red: rgb(221, 33, 33);
   --jet: rgb(35, 31, 31);
 }
 
@@ -62,7 +63,6 @@ header {
 
   width: 40%;
   height: 100vh;
-  border: 1px solid red;
 
   color: #fff;
 }
@@ -146,6 +146,8 @@ main {
 .col {
   display: flex;
   flex-direction: column;
+
+  position: relative;
 }
 label {
   text-transform: uppercase;
@@ -161,6 +163,24 @@ input:focus,
 .submit {
   box-shadow: 2px 3px 6px hsla(0, 3%, 19%, 0.5);
 }
+input:invalid {
+  border: 1px solid var(--red);
+}
+input:focus:invalid {
+  border: none;
+}
+.help {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: -1.25em;
+
+  color: var(--red);
+  font-size: .75em;
+}
+input:invalid ~ .help {
+  display: block;
+}
 .submit {
   margin-bottom: 1.5rem;
   padding: .75em 3.25em;
@@ -169,6 +189,11 @@ input:focus,
   border-radius: 5px;
   background-color: var(--ocean-mid-blue);
   color: #fff;
+
+  transition: transform 100ms ease;
+}
+.submit:active {
+  transform: translateY(3px);
 }
 a.login {
   text-decoration: none;
